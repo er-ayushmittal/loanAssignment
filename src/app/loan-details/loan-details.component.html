@@ -1,0 +1,85 @@
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="../assets/Handling-Finances.jpg" width="40" height="40" class="d-inline-block align-top" alt="">
+     MITTAL FINANCERS
+    </a>
+    <a class="navbar-brand" href="#">
+      <img src="../assets/Handling-Finances.jpg" width="40" height="40" class="d-inline-block align-top" alt="" style="margin-left: auto;">
+     
+    </a>
+  </nav>
+  <body>
+    <div class="container" style="margin-left: 37%; text-align: center;">
+          
+      <div class="form-row">
+        <div class="col-md-4">
+          <h6><label for="name">Name</label></h6>
+          <input type="text" required class="form-control" id="name" name="name" [(ngModel)]="name">
+        </div>
+        
+        <div class="col-md-4">
+          <h6><label for="mob">Mobile No</label>
+          <span id="errMob">*</span></h6>
+         
+          <input type="text" required class="form-control" id="mob" name="mob" [(ngModel)]="mob">
+        
+        </div>
+        
+        <div class="col-md-4">
+          <h6><label for="email">Email id</label>
+          <span id="errUid">*</span></h6>
+          <input type="text" required class="form-control" id="txtUid" name="email" [(ngModel)]="email">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-4">
+          <h6><label for="address">Address</label></h6>
+          <input type="text" required class="form-control" id="address" name="address" [(ngModel)]="address">
+        </div>
+        
+        <div class="col-md-4">
+          <h6><label for="state">State</label></h6>
+          <input list="states" id="state" name="state" class="form-control" [(ngModel)]="state">
+             <datalist id="states">
+                        <option value="Andhra  pradesh"></option>
+                        <option value="Arunachal Pradesh"></option>
+                        <option value="Asom (Assam)"></option>
+                        <option value="Bihar"></option>
+                        <option value="Karnataka"></option>
+                        <option value="Kerala"></option>
+                        <option value="Chhattisgarh"></option>
+                        <option value=" Uttar Pradesh"></option>
+                        <option value="Goa"></option>
+                        <option value="Gujrat"></option>
+                        <option value="Haryana"></option>
+                        <option value="Jammu and Kashmir"></option>
+                        <option value="Jharkhand"></option>
+                        <option value="West Bengal"></option>
+                        <option value="Madhya Pardesh"></option>
+                        <option value="Maharashtra"></option>
+                        <option value="Manipur"></option>
+                        <option value="Meghalaya"></option>
+                        <option value="Mizoram"></option>
+                        <option value="Manipur"></option>
+                        <option value="Nagaland"></option>
+                        <option value="Orissa"></option>
+                        <option value="Punjab"></option>
+                        <option value="Rajasthan"></option>
+                        <option value="Sikkim"></option>
+                        <option value="Tamil Nadu"></option>
+                        <option value="Telangana"></option>
+                        <option value="Tripura"></option>
+                        <option value="Uttrakhand"></option>
+                    </datalist>
+        </div>
+        
+      </div>
+      <br>
+      <button type="button" class="btn btn-primary" style="margin-right:65%" (click)="onBack()">Submit </button>
+      <div class="container" id="loan">
+    
+      
+    </div>
+    </div>
+    </body>
+  

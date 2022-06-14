@@ -1,0 +1,27 @@
+.not-ok{
+    color:red;
+    font-weight: bold;
+    border: 1px red solid;
+    border-radius: 5px;
+    padding: 3px;
+    display: inline;
+  }
+  .ok{
+    color:green;
+    font-weight: bold;
+    border: 1px green solid;
+    border-radius: 5px;
+    padding: 3px;
+    display: inline;
+  }
+  body{
+    background: url(../../assets/loan.jpg);
+background-repeat: no-repeat;
+background-size: 100%;
+  }
+  .modal-body{
+    background-color: #EDE342;
+  }
+  .card.green {
+background: linear-gradient(150deg, #39ef74, #F4F269 100%);
+}

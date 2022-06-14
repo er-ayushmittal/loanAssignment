@@ -1,0 +1,29 @@
+<html>
+<body>
+    <div class="center">
+    <div class="col-md-4">
+        <h6><label for="cs">Credit Score</label>
+        <span id="errUid">*</span></h6>
+        <input type="text" required class="form-control" id="cs" name="cs" [(ngModel)]="cs">
+      </div>
+     <br>
+     <br>
+      <div class="col-md-4">
+        <h6><label for="amt">Annual Salary</label>
+          <span id="errUid">*</span></h6>
+        <input type="text" required class="form-control" id="amt" name="amt" [(ngModel)]="amt">
+      </div>
+      <br>
+      <br>
+      <button type="button" class="btn btn-primary" style="margin-right:65%" (click)="onClick()">Submit </button>
+   
+
+  
+  <h1>Total loan amount you are eligible for : {{loan}}</h1>
+  <br>
+  <br>
+  <h1>Total of loan amount after Interest is: {{result}}</h1>
+  <br>
+  </div>
+</body>
+</html>
